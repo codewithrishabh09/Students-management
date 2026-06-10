@@ -227,3 +227,66 @@ button.btn-delete {
     transform: translateY(0);
   }
 }
+
+/* ── Filter Bar ── */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #1e1e2e;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.3);
+}
+
+.filter-select {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #1e1e2e;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.filter-select:focus {
+    border-color: #7c3aed;
+}
+
+.btn-clear {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #ef4444;
+    background: transparent;
+    color: #ef4444;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.btn-clear:hover {
+    background: #ef4444;
+    color: #fff;
+}
+
+.result-count {
+    color: #888;
+    font-size: 13px;
+    white-space: nowrap;
+}

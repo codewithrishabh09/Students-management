@@ -14,6 +14,7 @@ def student_helper(student) -> dict:
         "email": student["email"],
         "grade": student["grade"],
         "course": student["course"],
+        "attendance": student.get("attendance", "N/A")
     }
 
 @router.get("/students", response_model=List[dict])

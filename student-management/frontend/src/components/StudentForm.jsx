@@ -7,7 +7,8 @@ const StudentForm = ({ editData, onDone }) => {
         age: '',
         email: '',
         grade: '',
-        course: ''
+        course: '',
+        attendance: ''
     };
 
     const [form, setForm] = useState(initialState);
@@ -19,7 +20,8 @@ const StudentForm = ({ editData, onDone }) => {
                 age: editData.age,
                 email: editData.email,
                 grade: editData.grade,
-                course: editData.course
+                course: editData.course,
+                attendance: editData.attendance 
             });
         } else {
             setForm(initialState);
@@ -70,6 +72,11 @@ const StudentForm = ({ editData, onDone }) => {
                     <label>Course</label>
                     <input type="text" name="course" value={form.course} onChange={handleChange} required />
                 </div>
+                <div className="form-group">
+                    <label>Attendance</label>
+                    <input type="text" name="attendance" value={form.attendance} onChange={handleChange} required />
+                </div>
+                
                 <div className="form-actions">
                     <button type="submit" className="btn-submit">
                         {editData ? 'Update Student' : 'Add Student'}

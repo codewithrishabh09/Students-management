@@ -7,6 +7,8 @@ class Student(BaseModel):
     email: str
     grade: str
     course: str
+    attendance: str
+
 
 class UpdateStudent(BaseModel):
     name: Optional[str] = None
@@ -14,4 +16,4 @@ class UpdateStudent(BaseModel):
     email: Optional[str] = None
     grade: Optional[str] = None
     course: Optional[str] = None
-    
+    attendance: Optional[str] = None

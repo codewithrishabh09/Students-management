@@ -7,7 +7,6 @@ sudo systemctl start mongod
 cd "/home/rishabh/Documents/Web Developement/Students management /student-management/backend"
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 <!-- Run Frontend (React) -->

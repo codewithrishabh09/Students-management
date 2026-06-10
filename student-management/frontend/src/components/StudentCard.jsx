@@ -9,6 +9,7 @@ const StudentCard = ({ student }) => {
                 <p><strong>Email:</strong> {student.email}</p>
                 <p><strong>Grade:</strong> {student.grade}</p>
                 <p><strong>Course:</strong> {student.course}</p>
+                <p><strong>Attendance:</strong> {student.attendance}</p>
             </div>
         </div>
     );
